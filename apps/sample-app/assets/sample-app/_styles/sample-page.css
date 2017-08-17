@@ -1,0 +1,65 @@
+/*
+ **********************************************************************************************
+ *
+ * STYLESHEET FOR SAMPLE PAGE
+ *
+ ********************************************************************************************** 
+ */
+
+
+/* ***************** */
+/* ***** FONTS ***** */
+/* ***************** */
+
+/* EXAMPLE - IMPORTING GOOGLE FONTS
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+
+*/
+
+
+/* ******************** */
+/* ***** WEB VIEW ***** */
+/* ******************** */
+
+
+
+/* ************************************* */
+/* ***** OVERRIDING LIBRARY STYLES ***** */
+/* ************************************* */
+
+
+
+/* ********************************** */
+/* ***** MEDIA QUERIES - MOBILE ***** */
+/* ********************************** */
+
+/* Small devices (mobiles, 768px and below) */
+@media (max-width: 768px) {}
+
+
+/* ********************************** */
+/* ***** MEDIA QUERIES - TABLET ***** */
+/* ********************************** */
+
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 992px) {}
+
+
+/* *********************************** */
+/* ***** MEDIA QUERIES - DESKTOP ***** */
+/* *********************************** */
+
+/* Medium devices (desktops, 992px and up) */
+@media (max-width: 1200px) {}
+
+
+/* **************************************** */
+/* ***** MEDIA QUERIES - WORKSTATIONS ***** */
+/* **************************************** */
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+
+
