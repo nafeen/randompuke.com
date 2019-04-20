@@ -1,0 +1,55 @@
+<!--
+============================================================================================
+LANDING PAGE - LAYOUT
+============================================================================================ -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title><%= title %></title>
+
+	<!-- ========== GLOBAL STYLES ========== -->
+	<% include ../../partials/_global_styles/index %>
+
+	<!-- ========== LOCAL STYLES ========== -->
+	<% include ../../partials/_local_styles/index %>
+
+</head>
+<body>
+
+	<!-- ========== GOOGLE TAG MANAGER ========== -->
+	<% include ../../partials/_google_tag_manager/index %>	
+	
+	<!-- ========== HEADER ========== -->
+	<header>
+		<% include ../../partials/_header/index %>
+	</header>
+
+	<!-- ========== MAIN BODY CONTENT ========== -->
+	<main>
+		<% include partial_main %>
+	</main>
+	
+	
+	<!-- ========== FOOTER ========== -->
+	<footer>
+		<% include ../../partials/_footer/index %>
+	</footer>
+	
+
+	<!-- ========== GLOBAL SCRIPTS ========== -->
+	<% include ../../partials/_global_scripts/index %>
+
+
+	<!-- ========== LOCAL SCRIPTS ========== -->
+	<% include ../../partials/_local_scripts/index %>
+
+
+	
+</body>
+</html>

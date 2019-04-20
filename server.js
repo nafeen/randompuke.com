@@ -31,7 +31,14 @@ var app                =   express();
 
 
 // Routing for Sample App
-app.use('/', express.static('./apps/sample-app'));
+// app.use('/', express.static('./apps/sample-app'));
+app.use('/', require('./apps/sample-app/route.js'));
+app.use('/material-dashboard', express.static('./apps/sample-app'));
+
+
+app.set('views',    [
+                        __dirname + '/apps/sample-app/pages'
+                    ]);
 
 
 // listening on port 3000
