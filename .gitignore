@@ -4,11 +4,13 @@
 
 # Ignore the following files and folders
 node_modules/
+_credentials/
 
 # DO NOT ignore these files and folders
 !.gitignore
 !server.js
 !package.json
+!package-lock.json
 !apps
 !apps/
 !apps/*
