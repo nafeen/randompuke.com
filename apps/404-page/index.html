@@ -1,8 +1,7 @@
-
 <!--
  **********************************************************************************************
  *
- * SAMPLE PAGE FOR SAMPLE APP
+ * 404 PAGE
  *
  ********************************************************************************************** -->
 
@@ -15,7 +14,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Sample Page</title>
+	<title>404 | Nafeen.XYZ</title>
 
 
 	<!-- ************************* -->
@@ -25,14 +24,56 @@
 	<!-- FAVICON -->
 	<link rel="icon" href="assets/sample-app/_images/favicon.ico">
 
-	<!-- Bootstrap 4 - Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-
+	<!-- Bootstrap 3.3.7 - compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
 
 	<!-- ************************ -->
 	<!-- ***** LOCAL STYLES ***** -->
 	<!-- ************************ -->
-	<link rel="stylesheet" type="text/css" href="assets/sample-app/_styles/sample-page.css">
+	
+	<style type="text/css">
+
+		@import url('https://fonts.googleapis.com/css?family=Arvo');
+
+		.page_404 { 
+			padding:40px 0; 
+			background:#fff; 
+			font-family: 'Arvo', serif;
+		}
+
+		.page_404 img { 
+			width:100%;
+		}
+
+		.four_zero_four_bg {
+			background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+		    height: 400px;
+		    background-position: center;
+		 }
+		 
+		 
+		.four_zero_four_bg h1 {
+			font-size:80px;
+		 }
+		 
+		.four_zero_four_bg h3 {
+			font-size:80px;
+		}
+					 
+		.link_404 {
+			color: #fff!important;
+		    padding: 10px 20px;
+		    background: #39ac31;
+		    margin: 20px 0;
+		    display: inline-block;
+		}
+		
+		.contant_box_404 {
+			margin-top:-50px;
+		}
+
+	</style>
+
 
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -58,9 +99,31 @@
 	<!-- ***************************** -->
 
 	<main>
-		<section class="container-fluid home-section" id="home"></section>
+		
+		<section class="page_404">
+			<div class="container">
+				<div class="row">	
+					<div class="col-sm-12">
+						<div class="col-sm-10 col-sm-offset-1  text-center">
+							<div class="four_zero_four_bg">
+								<h1 class="text-center ">Lost?</h1>
+							</div>
+				
+							<div class="contant_box_404">
+								<h3 class="h2">
+									Tough luck, man!
+								</h3>
+								
+								<p>You need to know the exact URL to proceed...</p>
+				
+								<!-- <a href="" class="link_404">Go to Home</a> -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-		<section class="container-fluid home-section-2" id="home-2"></section>
 
 	</main>
 	

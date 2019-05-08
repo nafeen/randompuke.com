@@ -15,6 +15,7 @@
 // ADDING middlewares and other dependencies
 var express            =   require('express');
 var app                =   express();
+const path = require("path")
 
 
 // Auto-redirect HTTP requests to HTTPS
@@ -30,15 +31,24 @@ var app                =   express();
 // });
 
 
-// Routing for Sample App
-// app.use('/', express.static('./apps/sample-app'));
-app.use('/', require('./apps/sample-app/route.js'));
-app.use('/material-dashboard', express.static('./apps/sample-app'));
-
-
+// Set the default views directory to PAGES folder
 app.set('views',    [
-                        __dirname + '/apps/sample-app/pages'
+                        __dirname + '/apps/material-dashboard/pages'
                     ]);
+
+app.use('/assets', express.static('./apps/material-dashboard/assets'));
+
+// Set the view engine to ejs
+app.set('view engine', 'ejs');
+
+
+// Routing for Material Dashboard
+app.use('/dashboard', require('./apps/material-dashboard/route.js'));
+
+
+// Routing for 404 Page
+app.use('/', express.static('./apps/404-page'));
+app.use('*', express.static('./apps/404-page'));
 
 
 // listening on port 3000

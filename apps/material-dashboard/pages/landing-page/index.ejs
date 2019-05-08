@@ -1,0 +1,57 @@
+<!--
+============================================================================================
+LANDING PAGE - LAYOUT
+============================================================================================ -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+    <title><%= title %></title>
+
+    <link rel="apple-touch-icon" sizes="76x76" href="../../img/apple-icon.png" />
+	<link rel="icon" type="image/png" href="../../img/favicon.png" />
+
+
+	<!-- ========== GLOBAL STYLES ========== -->
+	<% include ../../partials/_global_styles/index %>
+
+	<!-- ========== LOCAL STYLES ========== -->
+	<% include ../../partials/_local_styles/index %>
+
+</head>
+<body>
+
+	<!-- ========== GOOGLE TAG MANAGER ========== -->
+	<% include ../../partials/_google_tag_manager/index %>	
+	
+	<!-- ========== HEADER ========== -->
+	<header>
+		<% include ../../partials/_header/index %>
+	</header>
+
+	<!-- ========== MAIN BODY CONTENT ========== -->
+	<main>
+		<% include partial_main %>
+	</main>
+	
+	<!-- ========== FOOTER ========== -->
+	<footer>
+		<% include ../../partials/_footer/index %>
+	</footer>
+
+	<!-- ========== GLOBAL SCRIPTS ========== -->
+	<% include ../../partials/_global_scripts/index %>
+
+	<!-- ========== LOCAL SCRIPTS ========== -->
+	<% include ../../partials/_local_scripts/index %>
+
+</body>
+</html>
