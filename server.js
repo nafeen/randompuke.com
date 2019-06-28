@@ -15,7 +15,6 @@
 // ADDING middlewares and other dependencies
 var express            =   require('express');
 var app                =   express();
-const path = require("path")
 
 
 // Auto-redirect HTTP requests to HTTPS
@@ -33,21 +32,17 @@ const path = require("path")
 
 // Set the default views directory to PAGES folder
 app.set('views',    [
-                        __dirname + '/apps/material-dashboard/pages'
+                        // __dirname + '/apps/material-dashboard/pages'
                     ]);
-
-app.use('/assets', express.static('./apps/material-dashboard/assets'));
 
 // Set the view engine to ejs
 app.set('view engine', 'ejs');
 
 
-// Routing for Material Dashboard
-app.use('/dashboard', require('./apps/material-dashboard/route.js'));
-
+// Routing for RandomPuke.com APP
+app.use('/', express.static('./apps/randompuke'));
 
 // Routing for 404 Page
-app.use('/', express.static('./apps/404-page'));
 app.use('*', express.static('./apps/404-page'));
 
 
